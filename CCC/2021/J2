@@ -7,15 +7,15 @@ public class Main {
 	
 	public static void main(String[] args) throws IOException {
         int n = nextInt();
-        TreeMap<Integer, String> map = new TreeMap();
+        TreeMap<Integer, String> auctions = new TreeMap();
         for (int i = 0; i < n; i++) {
             String str = next();
             int m = nextInt();
-            if (!map.containsKey(m)) {
-                map.put(m, str);
+            if (!auctions.containsKey(m)) {
+                auctions.put(m, str);
             }
         }
-        System.out.println(map.values().toArray()[map.values().toArray().length - 1]);
+        System.out.println(auctions.values().toArray()[auctions.values().toArray().length - 1]); // creating an array of the auction values would be smart but it's J2
 	}
 	
 	static String next() throws IOException {
