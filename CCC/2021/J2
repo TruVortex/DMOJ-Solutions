@@ -15,7 +15,7 @@ public class Main {
                 auctions.put(m, str);
             }
         }
-        System.out.println(auctions.values().toArray()[auctions.values().toArray().length - 1]); // creating an array of the auction values would be smart but it's J2
+        System.out.println(auctions.values().toArray()[auctions.values().toArray().length - 1]); // creating an array of the auction values would be smart
 	}
 	
 	static String next() throws IOException {
