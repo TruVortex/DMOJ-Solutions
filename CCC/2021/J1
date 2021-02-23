@@ -6,8 +6,7 @@ public class Main {
 	static StringTokenizer st;
 	
 	public static void main(String[] args) throws IOException {
-        Scanner sc = new Scanner(System.in);
-        int n = 5 * sc.nextInt() - 400;
+        int n = 5 * nextInt() - 400;
         System.out.println(n);
         if (n < 100) {
             System.out.println(1);
