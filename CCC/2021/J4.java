@@ -21,7 +21,6 @@ public class Main {
                 tmpL--;
             }
         }
-        System.out.println();
         for (int i = l; i < l + m; i++) {
             if (str.charAt(i) == 'L') {
                 lInM++;
@@ -29,7 +28,7 @@ public class Main {
                 tmpM--;
             }
         }
-        System.out.println(tmpL + tmpM - Math.min(mInL, lInM));
+        System.out.println(tmpL + tmpM - Math.min(mInL, lInM)); // why does this work; why not Math.max(...)
     }
 
     static String next() throws IOException {
