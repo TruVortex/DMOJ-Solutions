@@ -16,11 +16,11 @@ public class Main {
             System.out.println(check(str) ? "Yes" : "No");
         }
     }
-    
+
     public static boolean check(String str[]) {
         return !(str[0].startsWith(str[1]) || str[0].startsWith(str[2]) || str[1].startsWith(str[2]) || str[1].startsWith(str[0]) || str[2].startsWith(str[1])
-                 || str[2].startsWith(str[0]) || str[0].endsWith(str[1]) || str[0].endsWith(str[2]) || str[1].endsWith(str[2]) || str[1].endsWith(str[0])
-                 || str[2].endsWith(str[1]) || str[2].endsWith(str[0]));
+                || str[2].startsWith(str[0]) || str[0].endsWith(str[1]) || str[0].endsWith(str[2]) || str[1].endsWith(str[2]) || str[1].endsWith(str[0])
+                || str[2].endsWith(str[1]) || str[2].endsWith(str[0]));
     }
 
     static String next() throws IOException {
