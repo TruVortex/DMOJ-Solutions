@@ -1,6 +1,5 @@
 import java.util.*;
 import java.io.*;
-import java.text.DecimalFormat;
 
 public class Main {
 
@@ -8,7 +7,6 @@ public class Main {
     static StringTokenizer st;
 
     public static void main(String[] args) throws IOException {
-        DecimalFormat four = new DecimalFormat("####");
         int ottawa = nextInt();
         System.out.println(ottawa + " in Ottawa");
         System.out.println(localTime(ottawa, -300) + " in Victoria");
