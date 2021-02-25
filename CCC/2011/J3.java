@@ -25,7 +25,7 @@ public class Main {
         System.out.println(count);
     }
 
-    static String n1() throws IOException {
+    static String next() throws IOException {
         while (st == null || !st.hasMoreTokens()) {
             st = new StringTokenizer(br.readLine().trim());
         }
@@ -33,19 +33,19 @@ public class Main {
     }
 
     static long nextLong() throws IOException {
-        return Long.parseLong(n1());
+        return Long.parseLong(next());
     }
 
     static int nextInt() throws IOException {
-        return Integer.parseInt(n1());
+        return Integer.parseInt(next());
     }
 
     static double nextDouble() throws IOException {
-        return Double.parseDouble(n1());
+        return Double.parseDouble(next());
     }
 
     static char nextChar() throws IOException {
-        return n1().charAt(0);
+        return next().charAt(0);
     }
 
     static String nextLine() throws IOException {
