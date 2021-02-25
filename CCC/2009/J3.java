@@ -7,14 +7,14 @@ public class Main {
     static StringTokenizer st;
 
     public static void main(String[] args) throws IOException {
-        int ottawa = nextInt();
-        System.out.println(ottawa + " in Ottawa");
-        System.out.println(localTime(ottawa, -300) + " in Victoria");
-        System.out.println(localTime(ottawa, -200) + " in Edmonton");
-        System.out.println(localTime(ottawa, -100) + " in Winnipeg");
-        System.out.println(ottawa + " in Toronto");
-        System.out.println(localTime(ottawa, 100) + " in Halifax");
-        System.out.println(localTime(ottawa, 130) + " in St. John's");
+        int reg = nextInt();
+        System.out.println(reg + " in Ottawa");
+        System.out.println(localTime(reg, -300) + " in Victoria");
+        System.out.println(localTime(reg, -200) + " in Edmonton");
+        System.out.println(localTime(reg, -100) + " in Winnipeg");
+        System.out.println(reg + " in Toronto");
+        System.out.println(localTime(reg, 100) + " in Halifax");
+        System.out.println(localTime(reg, 130) + " in St. John's");
     }
     
     public static int localTime(int t, int c) {
