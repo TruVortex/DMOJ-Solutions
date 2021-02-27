@@ -43,8 +43,8 @@ public class Main {
             }
         }
         System.out.println(ans);
-        for (int i = 0; i < ans; i++) {
-            System.out.println(list.get(i));
+        for (String move : list) {
+            System.out.println(move);
         }
     }
 
