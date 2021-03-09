@@ -1,6 +1,6 @@
 # *STILL UPLOADING SOLUTIONS*
 ## DISCLAIMER
-I'm not that good at programming and these solutions are definately not optimal. Also, I am aware that my naming scheme wouldn't work for an actual file. :shrug:
+I'm not that good at programming and these solutions are definately not optimal. Also, I'm aware that my naming scheme wouldn't work for an actual file. :shrug:
 
 ### Language
 These solutions are in Java 8.
