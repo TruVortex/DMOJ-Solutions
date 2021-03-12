@@ -32,6 +32,8 @@ public class Main {
                         }
                     }
                 }
+            } else {
+                break;
             }
         }
         Collections.sort(all);
