@@ -20,7 +20,6 @@ public class Main {
             gcdBefore[i] = gcd(gcdBefore[i - 1], arr[i]);
             gcdAfter[n - i + 1] = gcd(gcdAfter[n - i + 2], arr[n - i + 1]);
         }
-        gcdAfter[0] = gcdAfter[1];
         int gcd = 0;
         for (int i = 1; i < n; i++) {
             gcd = Math.max(gcd, gcd(gcdBefore[i - 1], gcdAfter[i + 1]));
