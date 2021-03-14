@@ -1,3 +1,4 @@
+// Hooray for weak test data
 import java.util.*;
 import java.io.*;
 
