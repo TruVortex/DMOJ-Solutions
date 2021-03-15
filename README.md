@@ -7,7 +7,7 @@ These solutions are in Java 8 (with a few exceptions).
 
 **WHY?**
 
-Because there's more foward compatability than later versions and lots of things have been deprecated in Java 8 so Java 7 isn't as forward compatible. Furthermore, I am most proficient in Java although I know C++, some C, and very little Python 3. Also C++ and C are VERY unsafe/unstable.
+Because there's more foward compatability than later versions and lots of things have been deprecated in Java 8 so Java 7 isn't as forward compatible. I'am most proficient in Java although I know C++, some C, and a little Python 3. Also C++ and C are VERY unsafe/unstable.
 
 **IDE**
 
