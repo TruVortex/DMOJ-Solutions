@@ -7,7 +7,7 @@ public class Main {
     static StringTokenizer st;
 
     public static void main(String[] args) throws IOException {
-        long n = nextLong();
+        int n = nextInt();
         for (long i = 0; i < n; i++) {
             long a = nextLong();
             long b = nextLong();
