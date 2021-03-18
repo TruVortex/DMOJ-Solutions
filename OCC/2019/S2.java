@@ -8,9 +8,6 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         long n = nextLong();
-        if (n == 1000000000000000000L) {
-            n--;
-        }
         TreeSet<Long> nums = new TreeSet(Arrays.asList(2L, 3L));
         for (int i = 1; i < String.valueOf(n).length(); i++) {
             ArrayList<Long> temp = new ArrayList(nums);
@@ -22,8 +19,8 @@ public class Main {
             }
         }
         int idx = nums.size();
-        Object[] numsArr = nums.toArray();
-        while (Long.valueOf(String.valueOf(numsArr[--idx])) > n) {}
+        ArrayList<Long> list = new ArrayList(nums);
+        while (list.get(--idx) > n) {}
         System.out.println(idx + 1);
     }
 
