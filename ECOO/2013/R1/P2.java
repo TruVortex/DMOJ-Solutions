@@ -10,7 +10,7 @@ public class Main {
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5; j++) {
                 char[] arr = next().toCharArray();
-                ArrayList<Integer> nums = new ArrayList<Integer>();
+                ArrayList<Integer> nums = new ArrayList<>();
                 for (char c : arr) {
                     nums.add(c - '0');
                 }
