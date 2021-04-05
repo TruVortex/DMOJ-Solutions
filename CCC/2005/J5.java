@@ -10,45 +10,38 @@ public class Main {
         while (true) {
             String str = next();
             if (str.equals("X")) {
-                System.exit(0);
+                break;
             }
-            System.out.println(isMonkeyLang(str) ? "YES" : "NO");
+            System.out.println(isAWord(str) ? "YES" : "NO");
         }
     }
-
-    public static boolean isMonkeyLang(String str) {
-        if (str.length() > 0) {
-            int idx = str.indexOf("N");
-            if (idx >= 0) {
-                boolean result = false;
-                for (int i = 0; i < str.length(); i++) {
-                    if (str.charAt(i) == 'N') {
-                        result = result || (isWord(str.substring(0, i)) && isMonkeyLang(str.substring(i + 1)));
-                        if (result) {
-                            break;
-                        }
+    
+    static boolean isAWord(String str) {
+        if (str.length() == 0) {
+            return false;
+        }
+        if (str.contains("N")) {
+            boolean flag = false;
+            for (int i = 0; i < str.length(); i++) {
+                if (str.charAt(i) == 'N') {
+                    flag = (secondCheck(str.substring(0, i)) && isAWord(str.substring(i + 1)));
+                    if (flag) {
+                        break;
                     }
                 }
-                if (!result) {
-                    return isWord(str);
-                }
-                return result;
-            } else {
-                return isWord(str);
             }
+            return flag ? true : secondCheck(str);
+        } else {
+            return secondCheck(str);
         }
-        return false;
     }
-
-    public static boolean isWord(String str) {
-        if (str.length() > 0) {
-            int indxS = str.lastIndexOf("S");
-            if (str.equals("A")) {
-                return true;
-            }
-            if (str.startsWith("B") && str.endsWith("S")) {
-                return isMonkeyLang(str.substring(1, indxS));
-            }
+    
+    static boolean secondCheck(String str) {
+        if (str.equals("A")) {
+            return true;
+        }
+        if (str.startsWith("B") && str.endsWith("S")) {
+            return isAWord(str.substring(1, str.length() - 1));
         }
         return false;
     }
