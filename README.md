@@ -7,7 +7,7 @@ These solutions are in Java 8 (with a few exceptions).
 
 **WHY?**
 
-It's the version  I've learned, and I'm too lazy to learn another version. Also, I'am most proficient in Java although I know C++, Python 3, and a little C. Furthermore, C++ and C are VERY unsafe/unstable.
+It's the version  I've learned, and I'm too lazy to learn another version. Also, I'am most proficient in Java although I know C++, Python 3, and a little C and C++ and C are VERY unsafe/unstable.
 
 **IDE**
 
