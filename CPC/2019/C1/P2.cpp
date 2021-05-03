@@ -23,5 +23,5 @@ int main() {
 		ans = max(ans, r - l);
     }
     printf("%d", ans);
-    return 0;
+    return 0; 
 }
