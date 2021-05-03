@@ -16,12 +16,12 @@ int main() {
     sort(luggage, luggage + n);
     while (l < n && r < n) {
         if (luggage[r] - luggage[l] <= k) {
-			r++;
-		} else if (luggage[r] - luggage[l] > k) {
-			l++;
+            r++;
+        } else if (luggage[r] - luggage[l] > k) {
+            l++;
         }
-		ans = max(ans, r - l);
+        ans = max(ans, r - l);
     }
     printf("%d", ans);
-    return 0; 
+    return 0;
 }
