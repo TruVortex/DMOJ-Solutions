@@ -5,8 +5,7 @@ char _;
 #define MAXB 100001
 #define MAXFACTORS 128
 
-static int dp[MAXB + 1];
-static int otherdp[MAXFACTORS + 1][MAXB + 1];
+int dp[MAXB + 1], otherdp[MAXFACTORS + 1][MAXB + 1];
 
 int main() {
     for (int i = 1; i <= MAXB; i++) {
