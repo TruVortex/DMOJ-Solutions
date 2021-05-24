@@ -12,4 +12,5 @@ int main() {
         ch = getchar();
     }
     printf("%d", ans);
+    return 0;
 }
